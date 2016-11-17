@@ -76,7 +76,7 @@ I8 SchmittTrigger::DoAction()
       outPut = 1; // "dirUp"
       borderCrossing=1;
       if(status & 0x40) IDnum |= 0x8000;
-      registerEvent(SENESYS_KEY_ENTERED_EVENT, TAG_CROSS, IDnum, 1);
+      //registerEvent
     }
     
     if (HYST_ACT_DIR_DOWN == action)
@@ -84,7 +84,7 @@ I8 SchmittTrigger::DoAction()
       outPut = -1;  // "dirDown"
       borderCrossing=1;
       if(status & 0x40) IDnum |= 0x8000;
-      registerEvent(SENESYS_KEY_ENTERED_EVENT, TAG_CROSS, IDnum, 0);
+      //registerEvent
     }
   }
   else
